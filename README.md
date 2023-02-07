@@ -5,4 +5,4 @@
 - Putri Aulia Hamzah (21103074)
 *
 *
-*Nb : File ddalam bentuk rar karena terlalu besar untu di upload
+*Nb : File dalam bentuk rar karena terlalu besar untu di upload
