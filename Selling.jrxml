@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Selling" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2c1db0ce-ef04-446c-89eb-83550c9e3e0a">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="apotekdb"/>
+	<queryString language="SQL">
+		<![CDATA[select * from medicinetbl;]]>
+	</queryString>
+	<field name="MedID" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="MedID"/>
+		<property name="com.jaspersoft.studio.field.label" value="MedID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="medicinetbl"/>
+	</field>
+	<field name="MedName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="MedName"/>
+		<property name="com.jaspersoft.studio.field.label" value="MedName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="medicinetbl"/>
+	</field>
+	<field name="MedPrice" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="MedPrice"/>
+		<property name="com.jaspersoft.studio.field.label" value="MedPrice"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="medicinetbl"/>
+	</field>
+	<field name="MedQty" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="MedQty"/>
+		<property name="com.jaspersoft.studio.field.label" value="MedQty"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="medicinetbl"/>
+	</field>
+	<field name="MedFab" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="MedFab"/>
+		<property name="com.jaspersoft.studio.field.label" value="MedFab"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="medicinetbl"/>
+	</field>
+	<field name="MedExp" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="MedExp"/>
+		<property name="com.jaspersoft.studio.field.label" value="MedExp"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="medicinetbl"/>
+	</field>
+	<field name="MedCom" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="MedCom"/>
+		<property name="com.jaspersoft.studio.field.label" value="MedCom"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="medicinetbl"/>
+	</field>
+	<group name="MedID">
+		<groupExpression><![CDATA[$F{MedID}]]></groupExpression>
+	</group>
+	<group name="MedName">
+		<groupExpression><![CDATA[$F{MedName}]]></groupExpression>
+	</group>
+	<group name="MedPrice">
+		<groupExpression><![CDATA[$F{MedPrice}]]></groupExpression>
+	</group>
+	<group name="MedQty">
+		<groupExpression><![CDATA[$F{MedQty}]]></groupExpression>
+	</group>
+	<group name="MedFab">
+		<groupExpression><![CDATA[$F{MedFab}]]></groupExpression>
+	</group>
+	<group name="MedExp">
+		<groupExpression><![CDATA[$F{MedExp}]]></groupExpression>
+	</group>
+	<group name="MedCom">
+		<groupExpression><![CDATA[$F{MedCom}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="83" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="560" height="79" forecolor="#FFFFFF" backcolor="#FFFFFF" uuid="c95fb975-385e-4e6f-8c4a-2c19525f9982"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="79" forecolor="#FFFFFF" backcolor="#FFFFFF" uuid="d38984a6-0f85-432b-9008-9be9225253a8">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<image>
+					<reportElement x="9" y="0" width="80" height="79" uuid="998457e2-63e1-480f-88d0-6c32547d8354"/>
+					<imageExpression><![CDATA["C:/Users/MSI Katana GF66/Downloads/WhatsApp Image 2023-02-06 at 08.13.44.jpg"]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement x="470" y="30" width="100" height="30" uuid="3f69bd55-15a3-4724-993b-ed34f0a7e75e"/>
+					<text><![CDATA[Struk Belanja Obat]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="210" y="40" width="159" height="30" uuid="53f59b3e-a19c-45db-8604-be41ce173abe"/>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Times New Roman" size="26"/>
+					</textElement>
+					<text><![CDATA[PharmaComp Center]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="70" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="52" y="-3" width="328" height="14" forecolor="#FF0835" backcolor="#D1D1D1" uuid="55b886ab-edbe-482f-ae7a-309400747f43"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Nama Obat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="440" y="-3" width="120" height="14" forecolor="#FF0835" backcolor="#D1D1D1" uuid="5adb2dbb-883f-4466-a713-18df29ed76c2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Harga]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="380" y="-3" width="62" height="14" forecolor="#FF0835" backcolor="#D1D1D1" uuid="a3a72fb1-7914-452e-9777-ac9429b99b77"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Jumlah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="-10" y="-3" width="62" height="14" forecolor="#FF0835" backcolor="#D1D1D1" uuid="f5faf154-105b-4cf8-be53-bd0c92053996"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="-11" y="12" width="63" height="58" uuid="cdb80c0e-1929-44f7-88f7-0c4688c25bd6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{MedID}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement mode="Opaque" x="52" y="12" width="328" height="58" uuid="8bc1ee27-5fee-4063-9de3-dc8c4cbdbc86"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{MedName}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="380" y="11" width="62" height="59" uuid="91258182-5c2d-402d-909c-37189f4dd1f9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{MedQty}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="442" y="11" width="118" height="59" uuid="a8c4e4b3-2a1d-4954-b0eb-76730ba85376"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{MedPrice}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+</jasperReport>
